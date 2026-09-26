@@ -1,0 +1,101 @@
+/* cor do fundo */
+html {
+    background-color: #181818;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+/* centralizou o formulario */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* formulario */
+form {
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: #0e1010;
+    padding: 1em;
+}
+
+/* separar seção/borda */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* organização do formulario */
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* alinha a borda dos dois lados */
+}
+
+/* linhas nos formularios e alteração da cor delas */
+input, textarea {
+    background-color: rgba(0,0,0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: .75em;
+    margin: .5em 0 2.5em; 
+    color: white;
+    outline: 0; /* cria uma borda e ressalta */
+}
+
+
+/* invalidar informações
+input:invalid, textarea:invalid {
+    background-color: red;
+} */
+
+/* validar informações
+input:valid, textarea:valid {
+    background-color: green;
+} */
+
+
+/* invalidar informações erradas */
+input:invalid:focus, textarea:invalid:focus {
+    border-bottom: 2px solid #ff000d;
+}
+
+/* validar informações corretas */
+input:valid:focus, textarea:valid:focus {
+    border-bottom: 2px solid #0ec72a;
+}
+
+/* informar que o cursor esta naquele input quando clica */
+input:focus, textarea:focus {
+    border-bottom: 2px solid #8e999a;
+    background-color: #2a2727;
+}
+
+
+/* titulo do formulario */
+legend {
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    color: #8e999a;
+    font-size: 1.3em;
+}
+
+/* estilização do botão */
+.btn {
+    background-color: #2a2727;
+    color: white;
+    cursor: pointer;
+    padding: .7em;
+    font-size: 1.2em;
+    border: none;
+}
+
+
